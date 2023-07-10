@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 
 namespace OOPConcepts.Logica
 {
-    public class Date
+    public class Dates
     {
-        private int _year;
-        private int _month;
-        private int _day;
+        public int _year;
+        public int _month;
+        public int _day;
 
 
-        public Date()
+        public Dates()
         {
             _year = 1990;
             _month = 1;
             _day = 1;
         }
-        public Date(int year, int month, int day)
+        public Dates(int year, int month, int day)
         {
             _year = ValidateYear(year);
             _month = Validatemonth(month);

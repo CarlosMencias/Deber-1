@@ -4,17 +4,24 @@ using OOPConcepts.Logica;
 
 try
 {
-    var cliente1 = new Clientes()
+    var cliente1 = new Cliente()
     { 
-        Cliente= "Carlos",
+        
+        Clientes= "Carlos",
         Celular=0987330061,
         Correo= "menciasleal@gmail.com",
         Huespedes= 5,
         Pago= "Efectivo",
-        Reserva= new Date(2023,10,12),
-    };
+        Reserva= new Dates(2023,10,12),
+     };
 
+    var destinos = new Destino()
+    {
+        Pais = "Mexico",
+        Ciudad = "Cancun"
+    };
     Console.WriteLine(cliente1);
+    Console.WriteLine(destinos);
 
 }
 catch (Exception ex)
